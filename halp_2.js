@@ -1,11 +1,6 @@
-let cashOnHand = cashOnHand;
 document.getElementById("cash-on-hand").textContent = `$${cashOnHand}`;
 
 let stockPrices = { A: 70, B: 132, C: 82, D: 51, E: 149, F: 96 };
-
-const stocksJson1 = localStorage.getItem("stocks");
-let stocks = JSON.parse(stocksJson1);
-console.log(stocks);
 
 // Set the inner text of the HTML element with ID "hold-a" to the "hold" value for stock A
 document.getElementById("hold-a").innerText = `${stocks["A"].hold}`;
