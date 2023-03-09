@@ -1,4 +1,5 @@
 let cashOnHand = 100000;
+let stockPrices = { A: stockPriceA, B: stockPriceB, C: stockPriceC, D: stockPriceD, E: stockPriceE, F: stockPriceF};
 
 let stocks = {
   A: { hold: 0, change: 0 },
@@ -28,8 +29,8 @@ localStorage.setItem("stocks", stocksJson);
 function updateCashOnHand_A() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["A"].change * stockPriceA;
-  totalSellRevenue += stocks["A"].change * stockPriceA;
+  totalBuyCost += stocks["A"].change * stockPrices["A"];
+  totalSellRevenue += stocks["A"].change * stockPrices["A"];
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
@@ -43,8 +44,8 @@ function updateCashOnHand_A() {
 function updateCashOnHand_B() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["B"].change * stockPriceB;
-  totalSellRevenue += stocks["B"].change * stockPriceB;
+  totalBuyCost += stocks["B"].change * stockPrices["B"];
+  totalSellRevenue += stocks["B"].change * stockPrices["B"];
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
@@ -58,8 +59,8 @@ function updateCashOnHand_B() {
 function updateCashOnHand_C() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["C"].change * stockPriceC;
-  totalSellRevenue += stocks["C"].change * stockPriceC;
+  totalBuyCost += stocks["C"].change * stockPrices["C"];
+  totalSellRevenue += stocks["C"].change * stockPrices["C"];
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
@@ -73,8 +74,8 @@ function updateCashOnHand_C() {
 function updateCashOnHand_D() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["D"].change * stockPriceD;
-  totalSellRevenue += stocks["D"].change * stockPriceD;
+  totalBuyCost += stocks["D"].change * stockPrices["D"];
+  totalSellRevenue += stocks["D"].change * stockPrices["D"];
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
@@ -88,8 +89,8 @@ function updateCashOnHand_D() {
 function updateCashOnHand_E() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["E"].change * stockPriceE;
-  totalSellRevenue += stocks["E"].change * stockPriceE;
+  totalBuyCost += stocks["E"].change * stockPrices["E"];
+  totalSellRevenue += stocks["E"].change * stockPrices["E"];
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
@@ -103,8 +104,8 @@ function updateCashOnHand_E() {
 function updateCashOnHand_F() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["F"].change * stockPriceF;
-  totalSellRevenue += stocks["F"].change * stockPriceF;
+  totalBuyCost += stocks["F"].change * stockPrices["F"];
+  totalSellRevenue += stocks["F"].change * stockPrices["F"];
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
