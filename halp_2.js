@@ -1,4 +1,4 @@
-document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
+document.getElementById("cash-on-hand").textContent = cashOnHand.toLocaleString(
     "en-US",
     {
       style: "currency",
