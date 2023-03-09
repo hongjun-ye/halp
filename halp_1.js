@@ -29,8 +29,8 @@ localStorage.setItem("stocks", stocksJson);
 function updateCashOnHand_A() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["A"].change * stockPriceA;
-  totalSellRevenue += stocks["A"].change * stockPriceA;
+  totalBuyCost += stocks["A"].change * document.getElementById("check-a").value;
+  totalSellRevenue += stocks["A"].change * document.getElementById("check-a").value;
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
