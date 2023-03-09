@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <title>Page 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hongjun-ye/halp/halp_1.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="img">
+        <img src="sample_graph.png" alt="loading..." srcset="" />
+      </div>
+
+      <div class="container">
+        <h1>Round 0</h1>
+        <h2>Cash on Hand:</h2>
+        <h2 id="cash-on-hand">$100,000.00</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Unit Price</th>
+              <th>Share Owned</th>
+              <th>Buy/Sell Share(s)</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Stock A</th>
+              <td>$69</td>
+              <td id="hold-a">0</td>
+              <td><input type="number" id="change-a" value="0" /></td>
+              <td><button onclick="changeShare_A()">Buy/Sell</button></td>
+            </tr>
+            <tr>
+              <th>Stock B</th>
+              <td>$131</td>
+              <td id="hold-b">0</td>
+              <td><input type="number" id="change-b" value="0" /></td>
+              <td><button onclick="changeShare_B()">Buy/Sell</button></td>
+            </tr>
+            <tr>
+              <th>Stock C</th>
+              <td>$83</td>
+              <td id="hold-c">0</td>
+              <td><input type="number" id="change-c" value="0" /></td>
+              <td><button onclick="changeShare_C()">Buy/Sell</button></td>
+            </tr>
+            <tr>
+              <th>Stock D</th>
+              <td>$50</td>
+              <td id="hold-d">0</td>
+              <td><input type="number" id="change-d" value="0" /></td>
+              <td><button onclick="changeShare_D()">Buy/Sell</button></td>
+            </tr>
+            <tr>
+              <th>Stock E</th>
+              <td>$142</td>
+              <td id="hold-e">0</td>
+              <td><input type="number" id="change-e" value="0" /></td>
+              <td><button onclick="changeShare_E()">Buy/Sell</button></td>
+            </tr>
+            <tr>
+              <th>Stock F</th>
+              <td>$95</td>
+              <td id="hold-f">0</td>
+              <td><input type="number" id="change-f" value="0" /></td>
+              <td><button onclick="changeShare_F()">Buy/Sell</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/hongjun-ye/halp/halp_1.js"></script>
+  </body>
+</html>
