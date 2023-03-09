@@ -39,7 +39,7 @@ function updateCashOnHand_A() {
   localStorage.setItem("cashOnHand", cashOnHand);
   var check = parseInt(localStorage.getItem("cashOnHand"));
   console.log(check);
-  console.log(stockPrices["A"]);
+  console.log(stockPriceA);
 }
 
 function updateCashOnHand_B() {
