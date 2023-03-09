@@ -1,12 +1,4 @@
-let cashOnHand = parseInt(localStorage.getItem("cashOnHand"));
-console.log(cashOnHand);
-document.getElementById("cash-on-hand").textContent = `$${cashOnHand}`;
-
 let stockPrices = { A: 70, B: 132, C: 82, D: 51, E: 149, F: 96 };
-
-const stocksJson1 = localStorage.getItem("stocks");
-let stocks = JSON.parse(stocksJson1);
-console.log(stocks);
 
 // Set the inner text of the HTML element with ID "hold-a" to the "hold" value for stock A
 document.getElementById("hold-a").innerText = `${stocks["A"].hold}`;
@@ -15,16 +7,6 @@ document.getElementById("hold-c").innerText = `${stocks["C"].hold}`;
 document.getElementById("hold-d").innerText = `${stocks["D"].hold}`;
 document.getElementById("hold-e").innerText = `${stocks["E"].hold}`;
 document.getElementById("hold-f").innerText = `${stocks["F"].hold}`;
-
-// hld-a.innerText = `${stocks["A"].hold}`;
-// console.log(document.getElementById("hold-a").innerText);
-
-// Retrieve the JSON string from the localStorage
-// const stocksJson1 = localStorage.getItem("stocks");
-
-// Convert the JSON string to an object
-// const stocks1 = JSON.parse(stocksJson);
-// console.log(stocks1);
 
 function updateCashOnHand_A() {
   //   let sample = cashOnHand;
