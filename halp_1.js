@@ -1,7 +1,5 @@
 let cashOnHand = 100000;
-localStorage.setItem("cashOnHand", cashOnHand);
 
-let stockPrices = { A: 69, B: 131, C: 83, D: 50, E: 142, F: 95 };
 let stocks = {
   A: { hold: 0, change: 0 },
   B: { hold: 0, change: 0 },
