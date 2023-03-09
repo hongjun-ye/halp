@@ -324,7 +324,3 @@ function changeShare_F() {
     alert("You can't sell more shares than you own!");
   }
 }
-
-Qualtrics.SurveyEngine.addOnPageSubmit(function(type) {
-  Qualtrics.SurveyEngine.setEmbeddedData("cashOnHand", cashOnHand);
-});
