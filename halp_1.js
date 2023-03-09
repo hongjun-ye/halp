@@ -325,6 +325,6 @@ function changeShare_F() {
   }
 }
 
-Qualtrics.SurveyEngine.addOnPageSubmit(function() {
+Qualtrics.SurveyEngine.addOnPageSubmit(function(type) {
   Qualtrics.SurveyEngine.setEmbeddedData("cashOnHand", cashOnHand);
 });
