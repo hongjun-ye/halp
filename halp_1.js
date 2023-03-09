@@ -325,19 +325,6 @@ function changeShare_F() {
   }
 }
 
-function proceedToPageTwo() {
-  if (cashOnHand >= 0) {
-    // Navigate to next page
-  } else {
-    alert("You do not have enough cash to proceed to the next round!");
-  }
-}
-
 Qualtrics.SurveyEngine.addOnPageSubmit(function() {
-  if (cashOnHand >= 0) {
-    Qualtrics.SurveyEngine.setEmbeddedData("cashOnHand", cashOnHand);
-    // Navigate to next page
-  } else {
-    alert("You do not have enough cash to proceed to the next round!");
-  }
+  Qualtrics.SurveyEngine.setEmbeddedData("cashOnHand", cashOnHand);
 });
