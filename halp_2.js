@@ -1,4 +1,4 @@
-document.getElementById("cash-on-hand").textContent = `$${cashOnHand}`;
+document.getElementById("cash-on-hand").innerText = cashOnHand;
 
 let stockPrices = { A: 70, B: 132, C: 82, D: 51, E: 149, F: 96 };
 
