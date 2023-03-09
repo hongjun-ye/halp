@@ -1,5 +1,5 @@
 var cashOnHand = cashOnHand;
-var stockPrices = { A: stockPriceA, B: stockPriceB, C: stockPriceC, D: stockPriceD, E: stockPriceE, F: stockPriceF};
+// var stockPrices = { A: stockPriceA, B: stockPriceB, C: stockPriceC, D: stockPriceD, E: stockPriceE, F: stockPriceF};
 
 var stocks = {
   A: { hold: 0, change: 0 },
