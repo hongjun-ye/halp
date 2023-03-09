@@ -1,7 +1,7 @@
-let cashOnHand = 100000;
-let stockPrices = { A: stockPriceA, B: stockPriceB, C: stockPriceC, D: stockPriceD, E: stockPriceE, F: stockPriceF};
+var cashOnHand = 100000;
+var stockPrices = { A: stockPriceA, B: stockPriceB, C: stockPriceC, D: stockPriceD, E: stockPriceE, F: stockPriceF};
 
-let stocks = {
+var stocks = {
   A: { hold: 0, change: 0 },
   B: { hold: 0, change: 0 },
   C: { hold: 0, change: 0 },
