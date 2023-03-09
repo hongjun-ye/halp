@@ -1,11 +1,4 @@
-document.getElementById("cash-on-hand").textContent = cashOnHand.toLocaleString(
-    "en-US",
-    {
-      style: "currency",
-      currency: "USD",
-    }
-  );
- localStorage.setItem("cashOnHand", cashOnHand);
+let cashOnHand = cashOnHand
 
 let stockPrices = { A: 70, B: 132, C: 82, D: 51, E: 149, F: 96 };
 
