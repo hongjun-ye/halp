@@ -222,7 +222,7 @@ function changeShare_A_r0() {
       alert("not enough balance");
     } else {
       changeInput.value = 0;
-      updateCashOnHand_A();
+      updateCashOnHand_A_r0();
       updateHoldA();
     }
   } else {
@@ -245,7 +245,7 @@ function changeShare_A_r1() {
       alert("not enough balance");
     } else {
       changeInput.value = 0;
-      updateCashOnHand_A();
+      updateCashOnHand_A_r1();
       updateHoldA();
     }
   } else {
