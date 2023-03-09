@@ -303,32 +303,5 @@ function changeShare_E() {
   }
 }
 
-function changeShare_F() {
-  let sample = cashOnHand;
-  let changeInput = document.getElementById("change-f");
-  let changeAmount = Number(changeInput.value);
-  stocks["F"].change = 0;
-  stocks["F"].change += changeAmount;
-  if (stocks["F"].hold + stocks["F"].change >= 0) {
-    cashOnHand -= changeAmount * stockPrices["F"];
-    if (cashOnHand < 0) {
-      cashOnHand = sample;
-      changeInput.value = 0;
-      alert("not enough balance");
-    } else {
-      changeInput.value = 0;
-      updateCashOnHand_F();
-      updateHoldF();
-    }
-  } else {
-    alert("You can't sell more shares than you own!");
-  }
-}
 
-function proceedToPageTwo() {
-  if (cashOnHand >= 0) {
-    // Navigate to next page
-  } else {
-    alert("You do not have enough cash to proceed to the next round!");
-  }
-}
+
