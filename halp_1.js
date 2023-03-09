@@ -324,3 +324,11 @@ function changeShare_F() {
     alert("You can't sell more shares than you own!");
   }
 }
+
+function proceedToPageTwo() {
+  if (cashOnHand >= 0) {
+    // Navigate to next page
+  } else {
+    alert("You do not have enough cash to proceed to the next round!");
+  }
+}
