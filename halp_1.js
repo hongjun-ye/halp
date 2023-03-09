@@ -200,7 +200,7 @@ function changeShare_A() {
   stocks["A"].change = 0;
   stocks["A"].change += changeAmount;
   if (stocks["A"].hold + stocks["A"].change >= 0) {
-    cashOnHand -= changeAmount * stockPrices["A"];
+    cashOnHand -= changeAmount * stockPriceA;
     if (cashOnHand < 0) {
       cashOnHand = sample;
       changeInput.value = 0;
