@@ -194,10 +194,7 @@ function updateHoldF() {
 }
 
 function changeShare_A() {
-  document.getElementById("check-a").innerText = stockPriceA.toLocaleString(
-    "en-US",
-    { style: "currency", currency: "USD" }
-  );
+  document.getElementById("check-a").innerText = stockPriceA;
   let sample = cashOnHand;
   let changeInput = document.getElementById("change-a");
   let changeAmount = Number(changeInput.value);
