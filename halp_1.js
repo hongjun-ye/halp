@@ -26,11 +26,11 @@ localStorage.setItem("stocks", stocksJson);
 // console.log(stocks1);
 // new
 
-function updateCashOnHand_A() {
+function updateCashOnHand_A_r0() {
   let totalBuyCost = 0;
   let totalSellRevenue = 0;
-  totalBuyCost += stocks["A"].change * document.getElementById("check-a").value;
-  totalSellRevenue += stocks["A"].change * document.getElementById("check-a").value;
+  totalBuyCost += stocks["A"].change * 69;
+  totalSellRevenue += stocks["A"].change * 69;
   cashOnHand += totalSellRevenue - totalBuyCost;
   document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
     "en-US",
@@ -39,7 +39,21 @@ function updateCashOnHand_A() {
   localStorage.setItem("cashOnHand", cashOnHand);
   var check = parseInt(localStorage.getItem("cashOnHand"));
   console.log(check);
-  console.log(stockPriceA);
+}
+
+function updateCashOnHand_A_r1() {
+  let totalBuyCost = 0;
+  let totalSellRevenue = 0;
+  totalBuyCost += stocks["A"].change * 70;
+  totalSellRevenue += stocks["A"].change * 70;
+  cashOnHand += totalSellRevenue - totalBuyCost;
+  document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
+    "en-US",
+    { style: "currency", currency: "USD" }
+  );
+  localStorage.setItem("cashOnHand", cashOnHand);
+  var check = parseInt(localStorage.getItem("cashOnHand"));
+  console.log(check);
 }
 
 function updateCashOnHand_B() {
@@ -193,15 +207,38 @@ function updateHoldF() {
   console.log(stocksJson);
 }
 
-function changeShare_A() {
-  document.getElementById("check-a").innerText = stockPriceA;
+function changeShare_A_r0() {
+  document.getElementById("check-a").innerText = 69;
   let sample = cashOnHand;
   let changeInput = document.getElementById("change-a");
   let changeAmount = Number(changeInput.value);
   stocks["A"].change = 0;
   stocks["A"].change += changeAmount;
   if (stocks["A"].hold + stocks["A"].change >= 0) {
-    cashOnHand -= changeAmount * stockPriceA;
+    cashOnHand -= changeAmount * 69;
+    if (cashOnHand < 0) {
+      cashOnHand = sample;
+      changeInput.value = 0;
+      alert("not enough balance");
+    } else {
+      changeInput.value = 0;
+      updateCashOnHand_A();
+      updateHoldA();
+    }
+  } else {
+    alert("You can't sell more shares than you own!");
+  }
+}
+
+function changeShare_A_r1() {
+  document.getElementById("check-a").innerText = 70;
+  let sample = cashOnHand;
+  let changeInput = document.getElementById("change-a");
+  let changeAmount = Number(changeInput.value);
+  stocks["A"].change = 0;
+  stocks["A"].change += changeAmount;
+  if (stocks["A"].hold + stocks["A"].change >= 0) {
+    cashOnHand -= changeAmount * 70;
     if (cashOnHand < 0) {
       cashOnHand = sample;
       changeInput.value = 0;
