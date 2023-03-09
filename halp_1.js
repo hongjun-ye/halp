@@ -1,4 +1,4 @@
-var cashOnHand = 100000;
+var cashOnHand = cashOnHand;
 var stockPrices = { A: stockPriceA, B: stockPriceB, C: stockPriceC, D: stockPriceD, E: stockPriceE, F: stockPriceF};
 
 var stocks = {
