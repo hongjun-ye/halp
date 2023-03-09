@@ -1,8 +1,3 @@
-document.getElementById("cash-on-hand").innerText = cashOnHand.toLocaleString(
-  "en-US",
-  { style: "currency", currency: "USD" }
- );
-
 let stockPrices = { A: 70, B: 132, C: 82, D: 51, E: 149, F: 96 };
 
 // Set the inner text of the HTML element with ID "hold-a" to the "hold" value for stock A
