@@ -47,13 +47,13 @@ th {
   text-align: left;
   padding: 10px;
   border-bottom: 2px solid #ddd;
-  width: 40px;
+  width: 60px;
 }
 
 td {
   padding: 10px;
   border-bottom: 2px solid #ddd;
-  width: 40px;
+  width: 60px;
 }
 
 input[type="number"] {
